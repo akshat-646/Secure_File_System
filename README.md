@@ -4,27 +4,27 @@ This project implements a secure file system with a graphical user interface (GU
 
 **Features**
 
-**User Registration & Login**: Secure user registration and login with username, password, and role (user/admin).
+**1.User Registration & Login**: Secure user registration and login with username, password, and role (user/admin).
 
-**Biometric Authentication**: Face recognition integrated into the login process for an additional layer of security.
+**2.Biometric Authentication**: Face recognition integrated into the login process for an additional layer of security.
 
-**Role-Based Access Control**:
+**3.Role-Based Access Control**:
 
-User Role: Can create, read, and write to their own secure files.
+    **User Role**: Can create, read, and write to their own secure files.
 
-Admin Role: Has all user privileges, plus the ability to access all files in the system and manage users (view, delete).
+    **Admin Role**: Has all user privileges, plus the ability to access all files in the system and manage users (view, delete).
 
-**Secure File Operations**: Create, read, and write text files within a designated "secure folder."
+**4.Secure File Operations**: Create, read, and write text files within a designated "secure folder."
 
-**Database Integration**: Uses MySQL to store user credentials (hashed passwords), roles, face image paths, and login attempt logs.
+**5.Database Integration**: Uses MySQL to store user credentials (hashed passwords), roles, face image paths, and login attempt logs.
 
-**Custom C Module Integration**: A C program handles the low-level file operations within the secure folder, compiled and executed from the Python GUI.
+**6.Custom C Module Integration**: A C program handles the low-level file operations within the secure folder, compiled and executed from the Python GUI.
 
-**Login Attempt Logging**: Records login attempts for security monitoring.
+**7.Login Attempt Logging**: Records login attempts for security monitoring.
 
-**Theme Toggle**: Switch between light and dark modes for the GUI.
+**8.Theme Toggle**: Switch between light and dark modes for the GUI.
 
-**Camera Test Utility**: A utility to test camera functionality for face recognition.
+**9.Camera Test Utility**: A utility to test camera functionality for face recognition.
 
 **System Architecture**
 
