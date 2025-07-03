@@ -10,9 +10,9 @@ This project implements a secure file system with a graphical user interface (GU
 
 **3.Role-Based Access Control**:
 
-    **User Role**: Can create, read, and write to their own secure files.
+   **i.User Role**: Can create, read, and write to their own secure files.
 
-    **Admin Role**: Has all user privileges, plus the ability to access all files in the system and manage users (view, delete).
+   **ii.Admin Role**: Has all user privileges, plus the ability to access all files in the system and manage users (view, delete).
 
 **4.Secure File Operations**: Create, read, and write text files within a designated "secure folder."
 
@@ -73,18 +73,18 @@ Open **database_setup.py.**
 
 Modify user and password in create_database_connection() and create_database_and_tables() functions to match your MySQL root (or a user with database creation privileges) username and password. By default, they are set to 'root' and 'root'.
 
-**def create_database_connection():
-    try:
-        connection = mysql.connector.connect(
-            host='localhost',
-            database='secure_file_system', # This database will be created
-            user='your_mysql_user',       # <--- CHANGE THIS
-            password='your_mysql_password' # <--- CHANGE THIS
-        )
-        return connection
-    except Error as e:
-        print(f"Error connecting to MySQL: {e}")
-        return None**
+      def create_database_connection():
+          try:
+              connection = mysql.connector.connect(
+               host='localhost',
+               database='secure_file_system', # This database will be created
+               user='your_mysql_user',       # <--- CHANGE THIS
+               password='your_mysql_password' # <--- CHANGE THIS
+           )
+           return connection
+         except Error as e:
+         print(f"Error connecting to MySQL: {e}")
+         return None
 
 Run Database Setup Script: Execute database_setup.py once to create the database and necessary tables.
 
